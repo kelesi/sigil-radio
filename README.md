@@ -9,27 +9,25 @@ One caveat though; wifi is turned off occasionally for no reason, even when I pe
 Working on iPhone 2G IOS version: 
 
 Prerequisities:
+---
  - Cydia
  - wget
  - Erica utilities (play binary)
  - bash
  
-### Usage
-functions.sh - helper functions
-
-charging_wifiupdown.sh - handles the detection of charging and can start an optional script (play_radio.sh)
-
-play_radio.sh - plays a online stream passed as a input parameter
-
-chargin_radio - my custom example script, where the online mp3 stream is specified and runs the above scripts
-
-com.sigil.radio.plist - example plist file to register the example script as application that start automatically
+Usage
+---
+    functions.sh - helper functions
+    charging_wifiupdown.sh - handles the detection of charging and can start an optional script (play_radio.sh)
+    play_radio.sh - plays a online stream passed as a input parameter
+    chargin_radio - my custom example script, where the online mp3 stream is specified and runs the above scripts
+    com.sigil.radio.plist - example plist file to register the example script as application that start automatically
 
 To register the plist:
-launchctl load /private/var/root/com.sigil.radio.plist
+    launchctl load /private/var/root/com.sigil.radio.plist
 
 To unregister the plist:
-launchctl unload /private/var/root/com.sigil.radio.plist
+    launchctl unload /private/var/root/com.sigil.radio.plist
 
-Note: When you register the plist file, the script will be run automatically on iPhone start and the script will be automatically restarted by IOS when it's killed.
+>Note: When you register the plist file, the script will be run automatically on iPhone start and the script will be automatically restarted by IOS when it's killed.
 
