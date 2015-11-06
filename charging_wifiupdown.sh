@@ -48,6 +48,7 @@ while :; do
 
     if [ $charging -eq 1 ]; then
         #Try to periodicaly start wifi to avoid sleep
+        echo "Get wifi up"
         ifconfig en0 up
     fi
 
