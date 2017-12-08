@@ -21,9 +21,9 @@ Usage
 
 - charging_wifiupdown.sh - handles the detection of charging and can start an optional script (play_radio.sh)
 
-- play_radio.sh - plays a online stream passed as a input parameter
+- play_radio.sh - plays an online stream passed as a input parameter
 
-- chargin_radio.sh - my custom example script, where the online mp3 stream is specified and runs the above scripts
+- charging_radio.sh - my custom example script, where the online mp3 stream is specified and runs the above scripts
 
 - com.sigil.radio.plist - example plist file to register the example script as application that start automatically
 
